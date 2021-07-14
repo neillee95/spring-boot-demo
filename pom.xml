@@ -32,6 +32,7 @@
     <module>persistent-storage</module>
     <module>rsocket-messaging</module>
     <module>low-code</module>
+    <module>apm</module>
     <!-- Spring Cloud Demo -->
     <module>cloud-nacos</module>
     <module>reactive-gateway</module>

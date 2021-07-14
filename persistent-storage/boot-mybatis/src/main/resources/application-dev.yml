@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    # see http://www.h2database.com/html/features.html#database_url
+    url: jdbc:h2:./test.db;MODE=MYSQL;DATABASE_TO_LOWER=TRUE;TRACE_LEVEL_FILE=3
+  h2:
+    console:
+      enabled: true
+      settings:
+        trace: true
+  flyway:
+    table: _flyway_schema_history
+    clean-disabled: true
+    url: ${spring.datasource.url}

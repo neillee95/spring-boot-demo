@@ -29,6 +29,7 @@
     <module>web-application</module>
     <module>monitor</module>
     <module>web-security</module>
+    <module>persistent-storage</module>
   </modules>
 
   <dependencies>

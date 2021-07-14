@@ -1,0 +1,7 @@
+server:
+  port: 9100
+
+# need spring boot >= 2.3.0.RELEASE
+#spring:
+#  webflux:
+#    base-path: /demo

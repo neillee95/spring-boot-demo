@@ -1,0 +1,13 @@
+server:
+  port: 9300
+
+spring:
+  mvc:
+    date-format: yyyy-MM-dd HH:mm:ss
+
+web.use-custom-response: false
+
+cors:
+  enabled: true
+  path-pattern: /**
+  max-age: 2h

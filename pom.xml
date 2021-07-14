@@ -26,6 +26,7 @@
 
   <modules>
     <module>start</module>
+    <module>web-application</module>
   </modules>
 
   <dependencies>

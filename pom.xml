@@ -24,6 +24,10 @@
     <graalvm-native.version>0.8.5</graalvm-native.version>
   </properties>
 
+  <modules>
+    <module>start</module>
+  </modules>
+
   <dependencies>
     <dependency>
       <groupId>org.springframework.boot</groupId>

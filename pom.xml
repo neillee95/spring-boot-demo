@@ -30,6 +30,7 @@
     <module>monitor</module>
     <module>web-security</module>
     <module>persistent-storage</module>
+    <module>rsocket-messaging</module>
   </modules>
 
   <dependencies>

@@ -33,6 +33,7 @@
     <module>rsocket-messaging</module>
     <!-- Spring Cloud Demo -->
     <module>cloud-nacos</module>
+    <module>reactive-gateway</module>
   </modules>
 
   <dependencies>

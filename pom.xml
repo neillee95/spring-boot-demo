@@ -34,6 +34,7 @@
     <!-- Spring Cloud Demo -->
     <module>cloud-nacos</module>
     <module>reactive-gateway</module>
+    <module>cloud-bus-kafka</module>
   </modules>
 
   <dependencies>

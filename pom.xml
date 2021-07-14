@@ -31,6 +31,8 @@
     <module>web-security</module>
     <module>persistent-storage</module>
     <module>rsocket-messaging</module>
+    <!-- Spring Cloud Demo -->
+    <module>cloud-nacos</module>
   </modules>
 
   <dependencies>

@@ -28,6 +28,7 @@
     <module>start</module>
     <module>web-application</module>
     <module>monitor</module>
+    <module>web-security</module>
   </modules>
 
   <dependencies>

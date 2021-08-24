@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>OAuth2 认证中心</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <style>
+    html, body {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+    }
+    .login-wrapper {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .login-form {
+      width: 40%;
+      min-width: 400px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+      box-sizing: border-box;
+      padding: 32px;
+      border-radius: 4px;
+    }
+    .login-form h1 {
+      text-align: center;
+    }
+    .submit-button-wrapper {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<div class="login-wrapper">
+  <form class="login-form" th:action="@{/login}" method="post">
+    <h1>OAuth2 认证中心</h1>
+    <!-- username -->
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="username" name="username" type="text" class="validate" autocomplete="off">
+        <label for="username">Username</label>
+      </div>
+    </div>
+    <!-- password -->
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="password" name="password" type="password" class="validate">
+        <label for="password">Password</label>
+      </div>
+    </div>
+    <div class="submit-button-wrapper">
+      <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+    </div>
+  </form>
+</div>
+</body>
+</html>

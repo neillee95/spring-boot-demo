@@ -1,0 +1,19 @@
+server:
+  port: 8802
+  servlet:
+    context-path: /learning
+
+spring:
+  application:
+    name: learning
+
+security:
+  oauth2:
+    client:
+      client-id: learning
+      client-secret: 654321
+      access-token-uri: http://127.0.0.1:8800/oauth/token
+      user-authorization-uri: http://127.0.0.1:8800/oauth/authorize
+    resource:
+      jwt:
+        key-uri: http://127.0.0.1:8800/oauth/token_key

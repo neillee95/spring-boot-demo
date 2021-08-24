@@ -7,28 +7,28 @@
 
   <parent>
     <groupId>com.example</groupId>
-    <artifactId>spring-boot-demo</artifactId>
+    <artifactId>web-security</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
 
-  <artifactId>web-security</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <artifactId>oauth2-sso</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <name>${project.artifactId}</name>
 
   <modules>
-    <module>servlet-security</module>
-    <module>reactive-security</module>
-    <module>oauth2-sso</module>
+    <module>sso-server</module>
+    <module>sso-approval</module>
+    <module>sso-learning</module>
   </modules>
 
   <dependencies>
     <dependency>
       <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-security</artifactId>
+      <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.springframework.security</groupId>
-      <artifactId>spring-security-test</artifactId>
-      <scope>test</scope>
+      <groupId>org.springframework.security.oauth.boot</groupId>
+      <artifactId>spring-security-oauth2-autoconfigure</artifactId>
     </dependency>
   </dependencies>
 

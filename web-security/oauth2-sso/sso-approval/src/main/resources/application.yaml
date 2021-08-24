@@ -1,0 +1,19 @@
+server:
+  port: 8801
+  servlet:
+    context-path: /approval
+
+spring:
+  application:
+    name: approval
+
+security:
+  oauth2:
+    client:
+      client-id: approval
+      client-secret: 123456
+      access-token-uri: http://127.0.0.1:8800/oauth/token
+      user-authorization-uri: http://127.0.0.1:8800/oauth/authorize
+    resource:
+      jwt:
+        key-uri: http://127.0.0.1:8800/oauth/token_key
